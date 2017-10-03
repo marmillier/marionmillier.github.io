@@ -1,0 +1,29 @@
+  body{
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+  h1{
+    color:blue;
+    text-align:center;
+    font-size:48px;
+  }
+
+  h2{
+    color:red;
+    text-align:center;
+  }
+
+  .titrespecial{
+    color:blue;
+  }
+
+  .souligne{
+    text-decoration: underline;
+  }
+
+  #fiesta{
+    background: red;
+    color: white;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 900;
+  }
