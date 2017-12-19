@@ -1,29 +1,137 @@
-  body{
-    font-family: 'Alegreya Sans', sans-serif;
-  }
-  h1{
-    color:blue;
-    text-align:center;
-    font-size:48px;
-  }
+.image_accueil {
+  margin: 0;
+  flex: 0 0 50%;
+}
 
-  h2{
-    color:red;
-    text-align:center;
-  }
+.centre {
+  justify-content:center;
+}
 
-  .titrespecial{
-    color:blue;
-  }
+.grille {
+  font-size: 0;
+  width: 80%;
+  margin: auto;
+  margin-top: 15%;
+}
 
-  .souligne{
-    text-decoration: underline;
-  }
 
-  #fiesta{
-    background: red;
-    color: white;
-    font-size: 48px;
-    font-style: italic;
-    font-weight: 900;
-  }
+.bloctexte{
+  left: 71%;
+  position: fixed;
+  max-width: 20%;
+}
+
+.texteprojet{
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+}
+
+.texteprojet2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10pt;
+  line-height: 14pt;
+}
+
+.textecontact{
+  margin-left: 10%;
+  margin-top: 15%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10pt;
+  max-width: 60%;
+}
+
+
+.ligne {
+  display:flex;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.quart, .demi, .troisquart, .plein {
+  margin: 0 8px;
+}
+
+.quart {
+  flex: 0 0 calc(25% - 16px);
+}
+
+.demi {
+  flex: 0 0 calc(50% - 16px);
+}
+
+.troisquart {
+  flex: 0 0 calc(75% - 16px);
+}
+
+.plein {
+  flex: 0 0 calc(100% - 16px);
+}
+
+.decale-1, .decale-2, .decale-3 {
+
+}
+
+.decale-1 {
+  margin-left: calc(25% + 8px);
+}
+
+.decale-2 {
+  margin-left: calc(50% + 8px);
+}
+
+.decale-3 {
+  margin-left: calc(75% + 8px);
+}
+
+.gauchehaut,
+.droitehaut,
+.gauchebas,
+.droitebas {
+  position: fixed;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #6600ff;
+}
+
+.gauchehaut {
+  top: 30px;
+  left:30px;
+}
+
+.droitehaut {
+  right:30px;
+  top: 30px;
+}
+
+.gauchebas {
+  left:30px;
+  bottom:30px;
+}
+
+.droitebas {
+  right: 30px;
+  bottom:30px;
+}
+
+.alignementbas{
+   display: flex;
+   align-items:flex-end;
+}
+
+
+a {
+  color:#6600ff;
+  text-decoration: none;
+  cursor: url(curseur.png), auto;
+}
+
+img {
+  max-width: 100%;
+  height:auto;
+}
+
+img:hover{
+  border-width:2px;
+   border-style:solid;
+   border-color: #6600ff;
+ }
