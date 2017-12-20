@@ -1,3 +1,5 @@
+
+
 .image_accueil {
   margin: 0;
   flex: 0 0 50%;
@@ -40,7 +42,7 @@
   max-width: 60%;
 }
 
-
+/*grille*/
 .ligne {
   display:flex;
   width: 100%;
@@ -83,6 +85,7 @@
   margin-left: calc(75% + 8px);
 }
 
+/*position des titres dans les coins*/
 .gauchehaut,
 .droitehaut,
 .gauchebas,
@@ -122,10 +125,96 @@
 a {
   color:#6600ff;
   text-decoration: none;
-  cursor: url(curseur.png), auto;
+  cursor: url(avatar2.png), auto;
 }
 
 img {
   max-width: 100%;
   height:auto;
+}
+
+@media screen and (max-width: 500px) {
+.grille {
+  margin-top: 100px;
+  width: 85%;
+	}
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .ligne {
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .ligne figure {
+    margin-top: 4px;
+  }
+
+  .gauchehaut {
+    top: 30px;
+    left:20px;
+  }
+
+  .droitehaut {
+    right:20px;
+    top: 30px;
+  }
+
+  .gauchebas {
+    left:20px;
+    bottom:30px;
+  }
+
+  .droitebas {
+    right: 20px;
+    bottom:30px;
+  }
+
+  .decale-1, .decale-2, .decale-3 {
+    margin-left: 0;
+  }
+
+  .sm-demi, .sm-plein {
+    margin: 0 4px;
+  }
+
+  .sm-demi {
+    flex: 0 0 calc(50% - 8px);
+
+  }
+
+  .sm-plein {
+    flex: 0 0 calc(100% - 8px);
+  }
+
+  .sm-decale-2 {
+    margin-left: calc(50% + 4px);
+  }
+
+  .bloctexte{
+    left: calc(50% + 8px);
+    position: fixed;
+    max-width: 40%;
+  }
+
+  .texteprojet{
+    font-size: 10pt;
+  }
+
+  .texteprojet2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 8pt;
+    line-height: 10pt;
+  }
+
+  .sm-textecontact{
+    margin-left: 9%;
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8pt;
+    max-width: 70%;
+  }
 }
