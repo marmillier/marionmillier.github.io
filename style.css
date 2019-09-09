@@ -1,9 +1,39 @@
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* ratio 16/9 */
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 .image_accueil {
   margin: 0;
   flex: 0 0 50%;
 }
+
+body{
+  background-color:#ece9f5;
+}
+
+.photo-bureau{
+max-width: 100%;
+margin-top: 30px;
+}
+
+.video {
+padding-left: 5px;
+  }
 
 .centre {
   justify-content:center;
@@ -13,7 +43,7 @@
   font-size: 0;
   width: 80%;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 12%;
 }
 
 
@@ -24,26 +54,57 @@
 }
 
 .texteprojet{
-  font-family: 'Poppins', sans-serif;
-  font-size: medium;
+  font-family: 'Cormorant Infant', serif;
+  font-size: smaller;
+  font-style: italic;
+  color: #bcaed2;
 }
 
 .texteprojet2{
   font-family: 'Roboto', sans-serif;
   font-size: 10pt;
   line-height: 14pt;
+  color: #bcaed2;
 }
 
 .textecontact{
   margin-left: 10%;
-  margin-top: 15%;
-  font-family: 'Roboto', sans-serif;
+  margin-top: 7%;
+  font-family: 'Cormorant Infant', serif;
   font-size: 12pt;
   max-width: 60%;
+  color: #bcaed2;
+  position: absolute;
+  width: 25%;
+  font-weight: normal;
+}
+
+.textecontact2{
+  margin-left: 40%;
+  margin-top: 10%;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 12pt;
+  max-width: 60%;
+  color: #bcaed2;
+  display: inline-table;
+  width: 25%;
+  font-weight: normal;
+}
+
+.textecontact3{
+  margin-left: 10%;
+  margin-top: 10%;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 18pt;
+  max-width: 60%;
+  color: #bcaed2;
+  position: absolute;
+  width: 25%;
+  font-weight: normal;
 }
 
 .textemail {
-  color: black;
+  color: #bcaed2;
   text-decoration: underline;
 }
 /*grille*/
@@ -96,8 +157,14 @@
 .droitebas {
   position: fixed;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: #6600ff;
+  font-family:'Cormorant Infant', serif;
+  color: white;
+  font-weight: normal;
+  font-size: xx-large ;
+}
+
+a:hover{
+  font-style: italic;
 }
 
 .gauchehaut {
@@ -125,11 +192,15 @@
    align-items:flex-end;
 }
 
+.diplomes{
+  font-family: serif;
+  color: white;
+}
 
 a {
-  color:#6600ff;
+  color:white;
   text-decoration: none;
-  cursor: url(avatar2.png), auto;
+  cursor: crosshair;
 }
 
 img {
@@ -142,6 +213,56 @@ img {
   margin-top: 100px;
   width: 85%;
 	}
+.gauchehaut {
+  width: 35%;
+	}
+
+  .gauchehaut,
+  .droitehaut,
+  .gauchebas,
+  .droitebas {
+    font-size: large ;
+  }
+
+  .textecontact{
+    margin-left: 10%;
+    margin-top: 50%;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 10pt;
+    max-width: 100%;
+    color: #bcaed2;
+    position: relative;
+    width: 100%;
+    font-weight: normal;
+  }
+
+  .textecontact2{
+    margin-left: 10%;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 10pt;
+    max-width: 60%;
+    color: #bcaed2;
+    width: 100%;
+    font-weight: normal;
+  }
+
+  .textecontact3{
+    margin-left: 10%;
+    margin-top: 50%;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 16pt;
+    max-width: 60%;
+    color: #bcaed2;
+    position: absolute;
+    width: 25%;
+    font-weight: normal;
+  }
+
+  .photo-bureau{
+  max-width: 50%;
+  margin-top: 10px;
+  margin-left: 95%;
+  }
 
   h2 {
     font-size: 16px;
@@ -217,8 +338,7 @@ img {
   .sm-textecontact{
     margin-left: 9%;
     margin-top: 100px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cormorant Infant', serif;
     font-size: 8pt;
     max-width: 70%;
   }
-}
